@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Coffee House{% endblock %}
+
+{% block content %}
+
+<div class="text-white text-center d-flex align-items-center justify-content-center"
+     style="height:350px;
+            background:url('https://cdn.pixabay.com/photo/2020/08/18/15/16/coffee-5498486_1280.jpg') center/cover;">
+    <h1 class="fw-bold p-3 rounded"
+        style="background: rgba(60,42,33,0.7);">
+        Welcome to Coffee House 
+    </h1>
+</div>
+
+<h4 class="text-center mt-4 fw-bold"
+    style="color:#5C3D2E;">
+    ร้านกาแฟบรรยากาศอบอุ่น เสิร์ฟความสุขในทุกแก้ว
+</h4>
+
+<div class="container mt-4">
+
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2019/11/11/15/32/coffee-4618705_1280.jpg"
+                     class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#6F4E37;">เมนูแนะนำ</h5>
+                    <p class="card-text">
+                        เอสเพรสโซ่ คาปูชิโน่ ลาเต้ และเครื่องดื่มสูตรพิเศษของทางร้าน
+                        คัดสรรเมล็ดกาแฟคุณภาพดี หอม เข้ม กลมกล่อม
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2017/03/28/12/16/tables-2181979_1280.jpg"
+                     class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#6F4E37;">บรรยากาศร้าน</h5>
+                    <p class="card-text">
+                        ตกแต่งสไตล์มินิมอล โทนอบอุ่น เหมาะสำหรับนั่งทำงาน อ่านหนังสือ
+                        หรือพักผ่อนกับเพื่อน ๆ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2021/01/08/06/32/cafe-5899078_1280.jpg"
+                     class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#6F4E37;">เกี่ยวกับร้าน</h5>
+                    <p class="card-text">
+                        Coffee House ก่อตั้งขึ้นด้วยความตั้งใจที่จะมอบกาแฟคุณภาพดี
+                        พร้อมบริการที่เป็นกันเอง เพื่อให้ทุกวันของคุณพิเศษยิ่งขึ้น
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-5 border-0">
+        <div class="card-body">
+            <h4 class="mb-3" style="color:#5C3D2E;">แผนที่ร้าน</h4>
+
+            <iframe
+                src="https://www.google.com/maps?q=Bangkok&output=embed"
+                width="100%"
+                height="400"
+                style="border-radius:10px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

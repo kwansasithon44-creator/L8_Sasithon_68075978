@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}จองโต๊ะ | Coffee House{% endblock %}
+
+{% block content %}
+
+<div class="hero-section text-center d-flex align-items-center justify-content-center">
+    <h2 class="fw-semibold text-white">
+        Welcome to Coffee House
+    </h2>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <div class="card custom-card">
+
+            <div class="card-header text-center">
+                แบบฟอร์มจองโต๊ะร้านกาแฟ
+            </div>
+
+            <div class="card-body">
+                <form>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control custom-input"
+                               placeholder="ชื่อ-นามสกุล">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control custom-input"
+                               placeholder="เบอร์โทรศัพท์">
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="date" class="form-control custom-input">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn custom-btn">
+                            จองโต๊ะ
+                        </button>
+
+                        <button type="reset" class="btn btn-light border">
+                            ยกเลิก
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+.hero-section {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_1280.jpg') center/cover;
+}
+
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #D7CCC8;
+    color: #4E342E;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.custom-input {
+    border-radius: 10px;
+    border: 1px solid #E0DAD5;
+    padding: 10px;
+}
+
+.custom-input:focus {
+    border-color: #A1887F;
+    box-shadow: 0 0 0 0.1rem rgba(161,136,127,0.25);
+}
+
+.custom-btn {
+    background-color: #A1887F;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #8D6E63;
+}
+
+</style>
+
+{% endblock %}
